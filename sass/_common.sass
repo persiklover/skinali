@@ -20,10 +20,28 @@ a
   width: 1px
   height: 1px
 
+.container
+  max-width: 1170px
+  margin: 0 auto
+  +lg
+    max-width: 960px
+  +md
+    max-width: 720px
+    // padding: 0 10px
+  +sm
+    max-width: 95%
+  +xs
+    padding: 0 7.5px
+    width: 100%
+
 html
   font-size: 10px
 
 body
+  background: hotpink // TODO: remove
+  +regular
   font-size: 1.8rem
+  color: $text-color
   min-width: 320px
   overflow-x: hidden
+  min-height: 200vh // TODO: remove

@@ -1,0 +1,139 @@
+$header-height: 8rem
+$header-height--small: 6rem
+
+.header
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 99
+  width: 100%
+  background-color: white
+  &-content
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: $header-height
+    // < 576px
+    +xs
+      height: $header-height--small
+  &-block
+    &:not(.logo)
+      text-align: right
+      // < 992px
+      +md
+        display: none
+    &__title
+      display: block
+      margin: 0 0 .3rem
+      +bold
+      font-size: 1.8rem
+      text-transform: uppercase
+      letter-spacing: 0.54px
+    &__subtitle
+      +light
+      font-size: 1.4rem
+      color: #6b6b6b
+
+.btn
+  padding: 1.9rem 1.8rem
+  color: $button-background-color
+  background: transparent
+  border: 0.2rem solid $button-background-color
+  cursor: pointer
+  transition: .3s
+  // < 576px
+  +xs
+    padding: 1rem 1.3rem
+  &:hover
+    background: $button-background-color
+    color: white
+
+$menu-btn-color: $button-background-color
+$menu-btn-w: 2rem
+$menu-btn-h: 0.2rem
+.menu-btn
+  position: relative
+  width:  7rem
+  height: 100%
+  background-color: transparent
+  padding: 0 2.5rem
+  border: none
+  border-left:  .1rem solid #eee7f8
+  border-right: .1rem solid #eee7f8
+  color: $menu-btn-color
+  cursor: pointer
+  // < 576px
+  +xs
+    width: 4rem
+  span,
+  span:before,
+  span:after
+    position: absolute
+    left: 50%
+    margin-left: -($menu-btn-w / 2)
+    width:  $menu-btn-w
+    height: $menu-btn-h
+    background-color: currentColor
+  span
+    &:before,
+    &:after
+      content: ''
+      transition: .3s cubic-bezier(.75,-0.5,0,1.75)
+    &:before
+      transform: translateY(-$menu-btn-h - .4rem)
+    &:after
+      transform: translateY($menu-btn-h + .4rem)
+  &.active
+    span
+      background: transparent
+      &:before
+        transform: rotate(225deg)
+      &:after
+        transform: rotate(-225deg)
+
+.logo
+  // < 576px
+  +xs
+    display: none
+
+.nav
+  position: fixed
+  z-index: -1
+  left: 0
+  top: $header-height
+  transform: translateY(-100%)
+  width: 100%
+  padding: 1.6rem 0
+  background: $menu-btn-color
+  transition: transform .3s ease
+  // < 576px
+  +xs
+    top: $header-height--small
+  &.active
+    transform: translateY(0)
+  &-inner
+    list-style: none
+    padding: 0
+    margin: 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    // < 992px
+    +md
+      flex-direction: column
+      .nav-inner__item
+        font-size: 1.9rem
+        margin: .5rem 0
+    &__item
+      +light
+      font-size: 1.7rem
+      color: white
+      line-height: 2.5rem
+      text-transform: uppercase
+      margin-right: 4rem
+      // < 1200px
+      +lg
+        font-size: 1.5rem
+        margin-right: 2rem
+      &:last-child
+        margin-right: 0
