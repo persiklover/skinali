@@ -8,7 +8,7 @@ $header-height--small: 6rem
   z-index: 99
   width: 100%
   background-color: white
-  &-content
+  &-wrap
     display: flex
     justify-content: space-between
     align-items: center
@@ -33,20 +33,10 @@ $header-height--small: 6rem
       +light
       font-size: 1.4rem
       color: #6b6b6b
-
-.btn
-  padding: 1.9rem 1.8rem
-  color: $button-background-color
-  background: transparent
-  border: 0.2rem solid $button-background-color
-  cursor: pointer
-  transition: .3s
-  // < 576px
-  +xs
-    padding: 1rem 1.3rem
-  &:hover
-    background: $button-background-color
-    color: white
+  &__btn
+    // < 576px
+    +xs
+      padding: 1rem 1.3rem
 
 $menu-btn-color: $button-background-color
 $menu-btn-w: 2rem
@@ -98,7 +88,7 @@ $menu-btn-h: 0.2rem
 
 .nav
   position: fixed
-  z-index: -1
+  z-index: 1
   left: 0
   top: $header-height
   transform: translateY(-100%)
