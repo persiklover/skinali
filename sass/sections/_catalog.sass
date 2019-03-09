@@ -1,0 +1,68 @@
+.catalog
+  &-wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    // < 992px
+    +md
+      justify-content: center
+  &-card
+    position: relative
+    max-width: 57rem
+    height: 13rem
+    background: hotpink
+    margin-bottom: 3rem
+    // < 1200px
+    +lg
+      max-width: 47rem
+    // < 992px
+    +md
+      max-width: 57rem
+    &__bg
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &__tag
+      position: absolute
+      left: 1rem
+      top:  1rem
+      background-color: rgba(#507fe1, .6)
+      padding: 1rem
+      margin: 0
+      +bold
+      font-size: 1.2rem
+      color: white
+      text-transform: uppercase
+    &__buttons-block
+      position: absolute
+      right: 0
+      bottom: 0
+      display: flex
+      // < 576px
+      +xs
+        font-size: 1.4rem
+    &__btn
+      padding: .8rem
+    &__btn-like
+      width: 4rem
+      background: darken($button-background-color, 5)
+      border: none
+      display: flex
+      cursor: pointer
+      transition: .3s ease
+      &:hover
+        background: $button-background-color
+      img
+        margin: auto
+        max-width:  1.8rem
+        max-height: 1.8rem
+  &__btn
+    display: block
+    width: fit-content
+    margin: 5rem auto 2rem
+    font-size: 1.6rem
+    text-transform: uppercase
+  &__subtext
+    display: block
+    text-align: center
+    font-size: 1.6rem

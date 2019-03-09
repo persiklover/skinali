@@ -6,8 +6,8 @@
 @import "../lib/normalize/_normalize.sass"
 
 *,
-*::before,
-*::after
+*:before,
+*:after
   box-sizing: border-box
 
 a
@@ -39,6 +39,7 @@ a
   border: 0.2rem solid $button-background-color
   background-color: $button-background-color
   color: white
+  text-align: center
   cursor: pointer
   transition: .3s ease
   &:hover
@@ -46,10 +47,16 @@ a
     border-color: darken($button-background-color, 5)
   &--light
     background-color: transparent
-    border: 0.2rem solid $button-background-color
+    border-color: $button-background-color
     color: $button-background-color
     &:hover
       background-color: $button-background-color
+      color: white
+  &--o
+    color: #6a99e9
+    background: white
+    border-color: white
+    &:hover
       color: white
 
 .section

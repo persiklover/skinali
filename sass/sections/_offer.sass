@@ -98,6 +98,8 @@
     // < 992px
     +md
       font-size: 1.4rem
-  input:focus
-    outline: none
-    border: .1rem solid $button-background-color !important
+  &__input,
+  &__checkbox:before
+    &:focus
+      outline: none
+      border: .1rem solid $button-background-color !important
