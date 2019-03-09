@@ -19,6 +19,7 @@
     +sm
       margin-top: -4rem
       padding: 5rem
+      text-align: center
     // < 576px
     +xs
       padding: 3rem 2rem
@@ -62,6 +63,12 @@
     border-right: none
     background-color: #fff
     padding: 3rem 2.6rem
+    &:focus
+      outline: none
+      border-color: $button-background-color !important
+    // < 768px
+    +sm
+      text-align: center
   &__checkbox-label
     padding-left: 5rem
     margin-right: 4rem
@@ -78,8 +85,10 @@
     appearance: none
     &:checked:before
       background: url("../img/checkbox.svg") no-repeat 70% 30% / 75%
-    &:disabled
-      // TODO: disabled
+    &:focus
+      outline: none
+      &:before
+        border-color: $button-background-color !important
     &:before
       content: ''
       display: block
@@ -98,8 +107,3 @@
     // < 992px
     +md
       font-size: 1.4rem
-  &__input,
-  &__checkbox:before
-    &:focus
-      outline: none
-      border: .1rem solid $button-background-color !important

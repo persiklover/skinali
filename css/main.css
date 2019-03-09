@@ -690,6 +690,11 @@ body {
   padding: 3rem 2.6rem;
 }
 
+.form__input:focus {
+  outline: none;
+  border-color: #507fe1 !important;
+}
+
 .form__checkbox-label {
   padding-left: 5rem;
   margin-right: 4rem;
@@ -710,6 +715,14 @@ body {
   background: url("../img/checkbox.svg") no-repeat 70% 30%/75%;
 }
 
+.form__checkbox:focus {
+  outline: none;
+}
+
+.form__checkbox:focus:before {
+  border-color: #507fe1 !important;
+}
+
 .form__checkbox:before {
   content: '';
   display: block;
@@ -727,12 +740,6 @@ body {
   height: 100%;
   font-size: 1.6rem;
   text-transform: uppercase;
-}
-
-.form__input:focus,
-.form__checkbox:before:focus {
-  outline: none;
-  border: 0.1rem solid #507fe1 !important;
 }
 
 .features {
@@ -1070,6 +1077,7 @@ body {
   .offer-wrap {
     margin-top: -4rem;
     padding: 5rem;
+    text-align: center;
   }
 
   .form-row {
@@ -1086,6 +1094,10 @@ body {
 
   .form-group {
     margin-bottom: 1rem;
+  }
+
+  .form__input {
+    text-align: center;
   }
 
   .form__checkbox-label {
