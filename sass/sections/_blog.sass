@@ -1,0 +1,52 @@
+.blog
+  background: white
+  &-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    // < 768px
+    +sm
+      flex-direction: column
+    // < 576px
+    +xs
+      text-align: center
+    &__title
+      +bold
+      color: black
+      font-size: 2.4rem
+    &__link
+      font-size: 1.6rem
+      color: $button-background-color
+      border-bottom: .1rem solid transparent
+      &:hover
+        border-bottom: .1rem solid $button-background-color
+  &-wrap
+    margin-top: 5rem
+    display: flex
+    +md
+      justify-content: space-between
+      flex-wrap: wrap
+    +sm
+      flex-direction: column
+      align-items: center
+
+.blog-card
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08)
+  background-color: white
+  display: flex
+  flex-direction: column
+  text-align: center
+  margin-right: 1rem
+  +md
+    flex-basis: 49%
+    margin-right: 0
+    margin-bottom: 2rem
+  &:last-child
+    margin-right: 0
+  &__img
+    width: 100%
+  &__title
+    +light
+    font-size: 1.8rem
+    color: black
+    padding: 3rem 0
