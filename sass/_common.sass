@@ -52,6 +52,21 @@ a
       background-color: $button-background-color
       color: white
 
+.section
+  padding: 8rem 0
+  // < 768px
+  +sm
+    padding: 5rem 0
+  &__header
+    +bold
+    font-size: 3rem
+    text-transform: uppercase
+    text-align: center
+    margin-bottom: 8rem
+    // < 768px
+    +sm
+      margin-bottom: 5rem
+
 html
   font-size: 10px
 

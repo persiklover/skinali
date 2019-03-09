@@ -391,6 +391,19 @@ a {
   color: white;
 }
 
+.section {
+  padding: 8rem 0;
+}
+
+.section__header {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
 html {
   font-size: 10px;
 }
@@ -710,6 +723,51 @@ body {
   border: 0.1rem solid #507fe1 !important;
 }
 
+.features {
+  background: white;
+}
+
+.features-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.feature {
+  text-align: center;
+  margin-bottom: 10rem;
+  -webkit-flex-basis: 33%;
+  -ms-flex-preferred-size: 33%;
+  flex-basis: 33%;
+}
+
+.feature__img {
+  width: 7rem;
+  height: 7rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  margin: 0 auto 2rem;
+}
+
+.feature__img img {
+  margin: auto;
+  max-width: 100%;
+}
+
+.feature__name {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: black;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -769,6 +827,14 @@ body {
     max-width: 95%;
   }
 
+  .section {
+    padding: 5rem 0;
+  }
+
+  .section__header {
+    margin-bottom: 5rem;
+  }
+
   .home-screen {
     height: 40rem;
     background-position: -13rem top;
@@ -812,6 +878,12 @@ body {
 
   .form__checkbox-label:last-child {
     margin-bottom: 0;
+  }
+
+  .feature {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
   }
 }
 
@@ -861,5 +933,16 @@ body {
 
   .offer-wrap {
     padding: 3rem 2rem;
+  }
+
+  .feature {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin-bottom: 5rem;
+  }
+
+  .feature:last-child {
+    margin-bottom: 0;
   }
 }

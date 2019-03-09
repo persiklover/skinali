@@ -1,0 +1,31 @@
+.features
+  background: white
+  &-wrap
+    display: flex
+    flex-wrap: wrap
+
+.feature
+  text-align: center
+  margin-bottom: 10rem
+  flex-basis: 33%
+  // < 768px
+  +sm
+    flex-basis: 50%
+  +xs
+    flex-basis: 100%
+    margin-bottom: 5rem
+    &:last-child
+      margin-bottom: 0
+  &__img
+    width:  7rem
+    height: 7rem
+    display: flex
+    background: white
+    margin: 0 auto 2rem
+    img
+      margin: auto
+      max-width: 100%
+  &__name
+    +light
+    font-size: 2rem
+    color: black
