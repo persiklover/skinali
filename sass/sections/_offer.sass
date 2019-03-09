@@ -1,0 +1,97 @@
+.offer
+  &-wrap
+    margin-top: -8rem
+    overflow: hidden
+    padding: 8.1rem
+    box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.1)
+    background: white url('../img/offer-bg.jpg') right top / contain
+    background-repeat: no-repeat
+    color: black
+    +lg
+      background-position: 68rem top
+    // < 992px
+    +md
+      background: white
+    // < 768px
+    +sm
+      margin-top: -4rem
+      padding: 5rem
+    // < 576px
+    +xs
+      padding: 3rem 2rem
+  &__title
+    +bold
+    font-size: 2.5rem
+    text-transform: uppercase
+    letter-spacing: 0.075rem
+    margin: 0 0 3.1rem
+  &__form
+    margin-top: 3.8rem
+
+.form
+  &-row
+    display: flex
+    margin-bottom: 2.5rem
+    &:last-child
+      margin-bottom: 0
+    // < 768px
+    +sm
+      flex-direction: column
+      .form__input
+        border: 0.1rem solid #ddd
+  &-group
+    flex: 1
+    +light
+    &:last-child
+      .form__input
+        border-right: 0.1rem solid #ddd
+    // < 768px
+    +sm
+      margin-bottom: 1rem
+  &__label
+    font-size: 1.7rem
+    display: block
+    margin: 0 0 1rem
+  &__input
+    font-size: 1.5rem
+    width: 100%
+    border: 0.1rem solid #ddd
+    border-right: none
+    background-color: #fff
+    padding: 3rem 2.6rem
+  &__checkbox-label
+    padding-left: 5rem
+    margin-right: 4rem
+    &:hover
+      cursor: pointer
+    // < 768px
+    +sm
+      width: fit-content
+      margin-bottom: 3rem
+      &:last-child
+        margin-bottom: 0
+  &__checkbox
+    position: absolute
+    appearance: none
+    &:checked:before
+      background: url("../img/checkbox.svg") no-repeat 70% 30% / 75%
+    &:disabled
+      // TODO: disabled
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      top: -.5rem
+      width: 3rem
+      height: 3rem
+      border: 0.1rem solid #ddd
+      background-color: white
+      margin-left: -5rem
+  &__submit
+    width: 100%
+    height: 100%
+    font-size: 1.6rem
+    text-transform: uppercase
+    // < 992px
+    +md
+      font-size: 1.4rem
