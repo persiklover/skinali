@@ -1,0 +1,62 @@
+.prices
+  &-wrap
+    margin-top: 5rem
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    +md
+      justify-content: space-between
+      flex-wrap: wrap
+    +sm
+      flex-direction: column
+      align-items: center
+
+.price-block
+  position: relative
+  background: white
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08)
+  background-color: white
+  flex-basis: 24%
+  display: flex
+  flex-direction: column
+  text-align: center
+  margin-bottom: 2rem
+  cursor: pointer
+  &:hover
+    .price-block__footer
+      transform: translateY(0)
+  +md
+    flex-basis: 49%
+    margin-right: 0
+    &__footer
+      position: static
+      z-index: 2
+      transform: translateY(0)
+  &__content
+    background: white
+  &__img
+    width: 100%
+  &__info
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 2.5rem 1.4rem
+    font-size: 1.5rem
+  &__type
+    +light
+    color: black
+  &__price
+    +bold
+  &__footer
+    position: absolute
+    z-index: -1
+    left: 0
+    top: 100%
+    width: 100%
+    transform: translateY(-100%)
+    background: white
+    padding: 0 1.4rem 1.4rem
+    transition: .3s ease
+  &__btn
+    display: block
+    width: 100%

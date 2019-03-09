@@ -1,0 +1,39 @@
+.steps
+  &-wrap
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+    +lg
+      &::before
+        top: 6.7rem
+    +md
+      flex-wrap: wrap
+      &::before
+        display: none
+    &::before
+      content: ''
+      display: block
+      width: 86%
+      height: .2rem
+      background: rgba(#7e7b78, .5)
+      position: absolute
+      z-index: -1
+      left: 50%
+      top: 6rem
+      transform: translateX(-50%)
+
+.step
+  flex-basis: 16%
+  text-align: center
+  +md
+    flex-basis: 45%
+    margin-bottom: 3rem
+  +sm
+    flex-basis: 100%
+  &__name
+    margin: 2.7rem 0
+  &__description
+    margin: 0
+    +light
+    font-size: 1.4rem
