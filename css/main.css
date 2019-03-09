@@ -598,6 +598,10 @@ body {
   font-size: 2rem;
 }
 
+.offer {
+  margin-bottom: 13rem;
+}
+
 .offer-wrap {
   margin-top: -8rem;
   overflow: hidden;
@@ -701,6 +705,11 @@ body {
   text-transform: uppercase;
 }
 
+.form input:focus {
+  outline: none;
+  border: 0.1rem solid #507fe1 !important;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -769,6 +778,10 @@ body {
     margin-top: 4rem;
   }
 
+  .offer {
+    margin-bottom: 7rem;
+  }
+
   .offer-wrap {
     margin-top: -4rem;
     padding: 5rem;
@@ -806,6 +819,10 @@ body {
   .container {
     padding: 0 7.5px;
     width: 100%;
+  }
+
+  .header {
+    border-bottom: 0.1rem solid #507fe1;
   }
 
   .header-wrap {
