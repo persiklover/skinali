@@ -4,10 +4,10 @@
   background: #f1f1f1 url("../img/main-bg.jpg") 55% top / cover
   overflow: hidden
   +lg
-    background-position: -33rem top
+    background-position: 36% top
   // < 992px
   +md
-    background-position: 30% top
+    background-position: 27% top
   // < 768px
   +sm
     height: 40rem
@@ -15,27 +15,35 @@
   // < 567px
   +xs
     margin-top: $header-height--small
+    text-align: center
     background: #f1f1f1
   &-wrap
     margin-top: 11rem
+    display: inline-block
     font-size: 3rem
     // < 768px
     +sm
+      font-size: 2.4rem
       margin-top: 4rem
     // < 567px
     +xs
       text-align: center
   &__title
+    font-size: 1.2em
     color: #252525
-    margin-bottom: 2.7rem
-  &__subtitle
-    +bold
-    color: #121212
+    font-weight: normal
+    margin: 0
+    strong
+      margin-top: 1em
+      display: block
+      font-size: 1em
+      color: #121212
+      +bold
   &__btn
     display: block
-    margin-top: 4.7rem
+    margin-top: 2.2em
+    font-size: .75em
     +bold
-    font-size: 2rem
     // < 567px
     +xs
       margin-left:  auto
