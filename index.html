@@ -23,7 +23,7 @@
         <button class="menu-btn js-menu-btn header__menu-btn">
           <span></span>
         </button>
-        <div class="header-block logo">
+        <div class="header-block header-block--logo">
           <h1 class="header-block__title">Фабрика скинали №1</h1>
           <span class="header-block__subtitle">ведущий производитель скинали</span>
         </div>
@@ -33,11 +33,19 @@
         </div>
         <div class="header-block">
           <a class="header-block__title" href="tel:+79121234567">+7 912 123-45-67</a>
-          <a class="header-block__subtitle" href="mailto:info@mail.ru">info@mail.ru</a>
+          <a class="header-block__subtitle" href="mailto:skinali@mail.ru">skinali@mail.ru</a>
         </div>
-        <button class="btn btn--light header__btn">Получить консультацию</button>
+        <button class="btn btn--light header-btn">
+          <svg focusable="false" class="header-btn__icon" viewBox="0 0 481 481">
+            <g>
+              <path d="M365 318c-15-16-35-16-51 0l-35 35c-3 4-6 5-10 2-8-4-16-7-23-12a369 369 0 0 1-121-132c-2-4-1-6 2-9l35-35c16-17 16-36 0-53l-28-28-29-28c-16-16-35-16-51 0L19 93a58 58 0 0 0-19 39c-2 25 5 49 13 72a476 476 0 0 0 235 251c27 13 56 24 87 25 21 2 40-4 55-20 10-12 22-22 32-33 16-16 16-36 1-52l-58-57zM346 238l37-6A165 165 0 0 0 243 96l-5 37a127 127 0 0 1 108 105z"/>
+              <path d="M404 78C361 35 307 8 248 0l-5 37a236 236 0 0 1 201 195l37-6c-10-57-37-108-77-148z"/>
+            </g>
+          </svg>
+          <span class="btn__text">Получить консультацию</span>
+        </button>
       </div>
-      <!-- /.header-content -->
+      <!-- /.header-wrap -->
     </div>
     <!-- /.container -->
   </header>
@@ -45,14 +53,14 @@
 
   <nav class="nav">
     <div class="container">
-      <ul class="nav-inner">
-        <li class="nav-inner__item"><a href="#">Главная</a></li>
-        <li class="nav-inner__item"><a href="#">Каталог</a></li>
-        <li class="nav-inner__item"><a href="#">Продукция</a></li>
-        <li class="nav-inner__item"><a href="#">Примеры работ</a></li>
-        <li class="nav-inner__item"><a href="#">Примерка изображений</a></li>
-        <li class="nav-inner__item"><a href="#">Стоимость дилерам</a></li>
-        <li class="nav-inner__item"><a href="#">О скинали</a></li>
+      <ul class="nav-wrap">
+        <li class="nav__item"><a href="#">Главная</a></li>
+        <li class="nav__item"><a href="#">Каталог</a></li>
+        <li class="nav__item"><a href="#">Продукция</a></li>
+        <li class="nav__item"><a href="#">Примеры работ</a></li>
+        <li class="nav__item"><a href="#">Примерка изображений</a></li>
+        <li class="nav__item"><a href="#">Стоимость дилерам</a></li>
+        <li class="nav__item"><a href="#">О скинали</a></li>
       </ul>
     </div>
     <!-- ./container -->
@@ -69,7 +77,9 @@
             на скинали
           </p>
           <strong class="home-screen__subtitle">от 3 000 р/м<sup>2</sup></strong>
-          <button class="btn home-screen__btn">Заказать скинали</button>
+          <button class="btn home-screen__btn">
+            <span class="btn__text">Заказать скинали</span>
+          </button>
         </div>
       </div>
       <!-- /.container -->
@@ -494,6 +504,7 @@
 
   <!-- Include JS -->
   <script src="lib/jquery/jquery.min.js"></script>
+  <script src="js/ally.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
