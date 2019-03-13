@@ -2,14 +2,13 @@
   margin-bottom: 13rem
   +sm
     margin-bottom: 7rem
-  &-wrap
-    margin-top: -8rem
-    overflow: hidden
-    padding: 8.1rem
+  &-card
+    margin-top: -10rem
+    background: white url('../img/offer-bg.jpg') no-repeat right top / contain
     box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.1)
-    background: white url('../img/offer-bg.jpg') right top / contain
-    background-repeat: no-repeat
+    padding: 8.1rem
     color: black
+    // < 1200px
     +lg
       background-position: 68rem top
     // < 992px
@@ -24,11 +23,12 @@
     +xs
       padding: 3rem 2rem
   &__title
-    +bold
     font-size: 2.5rem
+    +bold
     text-transform: uppercase
     letter-spacing: 0.075rem
-    margin: 0 0 3.1rem
+    margin: 0
+    margin-bottom: 3.1rem
   &__form
     margin-top: 3.8rem
 
@@ -42,7 +42,7 @@
     +sm
       flex-direction: column
       .form__input
-        border: 0.1rem solid #ddd
+        // border: 0.1rem solid #ddd
   &-group
     flex: 1
     +light
@@ -51,54 +51,60 @@
         border-right: 0.1rem solid #ddd
     // < 768px
     +sm
+      flex: auto
       margin-bottom: 1rem
+      &:last-child
+        margin-bottom: 0
   &__label
     font-size: 1.7rem
     display: block
     margin: 0 0 1rem
   &__input
-    font-size: 1.5rem
     width: 100%
     border: 0.1rem solid #ddd
     border-right: none
     background-color: #fff
     padding: 3rem 2.6rem
-    &:focus
-      outline: none
-      border-color: $button-background-color !important
+    font-size: 1.5rem
     // < 768px
     +sm
       text-align: center
+      border-right: 0.1rem solid #ddd
   &__checkbox-label
-    padding-left: 5rem
-    margin-right: 4rem
-    &:hover
-      cursor: pointer
-    // < 768px
-    +sm
-      width: fit-content
-      margin-bottom: 3rem
-      &:last-child
-        margin-bottom: 0
-  &__checkbox
-    position: absolute
-    appearance: none
-    &:checked:before
-      background: url("../img/checkbox.svg") no-repeat 70% 30% / 75%
-    &:focus
-      outline: none
-      &:before
-        border-color: $button-background-color !important
-    &:before
+    padding-left: 4rem
+    margin-right: 5rem
+    cursor: pointer
+    &::before
       content: ''
-      display: block
       position: absolute
-      top: -.5rem
-      width: 3rem
+      left: auto
+      top:  auto
+      width:  3rem
       height: 3rem
       border: 0.1rem solid #ddd
       background-color: white
-      margin-left: -5rem
+      margin-left: -4rem
+      margin-top: -.4rem
+    // < 768px
+    +sm
+      margin-bottom: 3rem
+      text-align: left
+      &:last-child
+        margin-bottom: 0
+  &__checkbox
+    appearance: none
+    /* Visually hidden */
+    position: absolute
+    width:  1px
+    height: 1px
+    overflow: hidden
+    clip: rect(0,0,0,0)
+    &:checked + label::before
+      background: url("../img/checkbox.svg") no-repeat 60% 25% / 75%
+    &:focus + label::before
+      // outline: none
+      border-color: $button-background-color
+
   &__submit
     width: 100%
     height: 100%

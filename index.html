@@ -88,7 +88,7 @@
 
     <section class="offer">
       <div class="container">
-        <div class="offer-wrap">
+        <div class="offer-card">
           <h2 class="offer__title">Оставьте заявку на рассчет</h2>
           <span class="offer_subtitle">и получите скидку 30% на изготовление скинали или фартука для кухни</span>
           <form class="form offer__form" method="get">
@@ -107,15 +107,11 @@
               </div>
             </div>
             <div class="form-row">
-              <label class="form__checkbox-label">
-                <input type="checkbox" class="form__checkbox">
-                Монтаж
-              </label>
+              <input class="form__checkbox" id="checkbox-1" type="checkbox">
+              <label class="form__checkbox-label" for="checkbox-1">Монтаж</label>
 
-              <label class="form__checkbox-label">
-                <input type="checkbox" class="form__checkbox">
-                Доставка
-              </label>
+              <input class="form__checkbox" id="checkbox-2" type="checkbox">
+              <label class="form__checkbox-label" for="checkbox-2">Доставка</label>
             </div>
             <div class="form-row">
               <div class="form-group">
@@ -125,12 +121,14 @@
                 <input class="form__input" type="text" placeholder="Ваш телефон">
               </div>
               <div class="form-group">
-                <button class="btn form__submit" type="sumbit">Получить скидку</button>
+                <button class="btn form__submit" type="sumbit">
+                  <span class="btn__text">Получить скидку</span>
+                </button>
               </div>
             </div>
           </form>
         </div>
-        <!-- ./offer-wrap -->
+        <!-- ./offer-card -->
       </div>
       <!-- /.container -->
     </section>
