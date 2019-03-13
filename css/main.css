@@ -1036,19 +1036,26 @@ body {
 }
 
 .feature__img {
-  width: 7rem;
-  height: 7rem;
+  max-width: 100%;
+}
+
+.feature__img-wrap {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background: white;
-  margin: 0 auto 2rem;
-}
-
-.feature__img img {
-  margin: auto;
-  max-width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 7rem;
+  height: 7rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
 .feature__name {
