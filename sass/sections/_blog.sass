@@ -14,39 +14,47 @@
       +bold
       color: black
       font-size: 2.4rem
+      word-wrap: normal
+      +xs
+        width: 100%
     &__link
+      border-bottom: .1rem solid transparent
+      padding: .2rem .5rem
       font-size: 1.6rem
       color: $button-background-color
-      border-bottom: .1rem solid transparent
       &:hover
         border-bottom: .1rem solid $button-background-color
   &-wrap
     margin-top: 5rem
     display: flex
+    justify-content: space-between
     +md
-      justify-content: space-between
       flex-wrap: wrap
-    +sm
+    +xs
       flex-direction: column
       align-items: center
 
 .blog-card
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08)
   background-color: white
-  display: flex
-  flex-direction: column
-  text-align: center
+  flex-basis: 25%
   margin-right: 1rem
+  text-align: center
   +md
     flex-basis: 49%
     margin-right: 0
     margin-bottom: 2rem
+  +xs
+    flex: auto
   &:last-child
     margin-right: 0
   &__img
     width: 100%
+    &-wrap
+      font-size: 0
   &__title
+    display: block
+    padding: 3rem .5rem
     +light
     font-size: 1.8rem
     color: black
-    padding: 3rem 0

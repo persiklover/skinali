@@ -1272,12 +1272,20 @@ body {
   font-weight: bold;
   color: black;
   font-size: 2.4rem;
+  word-wrap: normal;
+}
+
+@media (max-width: 576px) {
+  .blog-header__title {
+    width: 100%;
+  }
 }
 
 .blog-header__link {
+  border-bottom: .1rem solid transparent;
+  padding: .2rem .5rem;
   font-size: 1.6rem;
   color: #507fe1;
-  border-bottom: .1rem solid transparent;
 }
 
 .blog-header__link:hover {
@@ -1290,21 +1298,21 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 @media (max-width: 992px) {
   .blog-wrap {
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .blog-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1322,17 +1330,11 @@ body {
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
   background-color: white;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  text-align: center;
+  -webkit-flex-basis: 25%;
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
   margin-right: 1rem;
+  text-align: center;
 }
 
 @media (max-width: 992px) {
@@ -1345,6 +1347,15 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .blog-card {
+    -webkit-box-flex: 1;
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+  }
+}
+
 .blog-card:last-child {
   margin-right: 0;
 }
@@ -1353,12 +1364,17 @@ body {
   width: 100%;
 }
 
+.blog-card__img-wrap {
+  font-size: 0;
+}
+
 .blog-card__title {
+  display: block;
+  padding: 3rem .5rem;
   font-family: 'Proxima Nova', sans-serif;
   font-weight: 300;
   font-size: 1.8rem;
   color: black;
-  padding: 3rem 0;
 }
 
 .prices-wrap {
