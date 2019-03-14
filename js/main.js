@@ -14,4 +14,15 @@ $('.js-like-btn').click(function() {
   });
 });
 
+// Feedback slider
+$('.feedback-wrap').slick({
+  infinite: true,
+  slidesToScroll: 1,
+  mobileFirst: true,
+  responsive: [{
+    breakpoint: 992,
+    settings: 'unslick'
+  }]
+});
+
 });
