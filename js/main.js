@@ -25,4 +25,29 @@ $('.feedback-wrap').slick({
   }]
 });
 
+function createIframe(id) {
+  // body...
+}
+
+$('#map').click(function(e) {
+  e.preventDefault();
+  var iframe = document.createElement('iframe');
+
+  iframe.setAttribute('allowfullscreen', '');
+  iframe.setAttribute('src', 'https://yandex.ru/map-widget/v1/-/CCeqiENO');
+
+  $(this).removeAttr('href');
+  $(this).append(iframe);
+});
+
+document.addEventListener('click', function(e) {
+  var map = document.querySelector('#map iframe')
+  if(e.target.id === 'map') {
+    map.style.pointerEvents = 'all';
+  }
+  else {
+    map.style.pointerEvents = 'none';
+  }
+})
+
 });
