@@ -90,20 +90,20 @@
       <div class="container">
         <div class="offer-card">
           <h2 class="offer__title">Оставьте заявку на рассчет</h2>
-          <span class="offer_subtitle">и получите скидку 30% на изготовление скинали или фартука для кухни</span>
+          <span class="offer__subtitle">и получите скидку 30% на изготовление скинали или фартука для кухни</span>
           <form class="form offer__form" method="get">
             <div class="form-row">
               <div class="form-group">
-                <lavel class="form__label">Вид стекла</lavel>
-                <input class="form__input" type="text">
+                <label class="form__label" for="input1">Вид стекла</label>
+                <input class="form__input" id="input1" type="text">
               </div>
               <div class="form-group">
-                <lavel class="form__label">Ширина, см</lavel>
-                <input class="form__input" type="text">
+                <label class="form__label" for="input2">Ширина, см</label>
+                <input class="form__input" id="input2" type="text">
               </div>
               <div class="form-group">
-                <lavel class="form__label">Высота, см</lavel>
-                <input class="form__input" type="text">
+                <label class="form__label" for="input3">Высота, см</label>
+                <input class="form__input" id="input3" type="text">
               </div>
             </div>
             <div class="form-row">
@@ -115,10 +115,10 @@
             </div>
             <div class="form-row">
               <div class="form-group">
-                <input class="form__input" type="text" placeholder="Ваше имя">
+                <input class="form__input" id="input1" type="text" placeholder="Ваше имя">
               </div>
               <div class="form-group">
-                <input class="form__input" type="text" placeholder="Ваш телефон">
+                <input class="form__input" id="input1" type="text" placeholder="Ваш телефон">
               </div>
               <div class="form-group">
                 <button class="btn form__submit" type="sumbit">
@@ -609,6 +609,52 @@
       <!-- /.container -->
     </section>
     <!-- /.section feedback -->
+
+    <section class="offer offer--secondary">
+      <div class="container">
+        <div class="offer-card">
+          <h2 class="offer__title">Ищите дешевле и лучше?</h2>
+          <span class="offer__subtitle">Если у Вас уже есть расчет от другой фирмы, но Вы хотите цену дешевле, укажите ее - и мы пересчитаем вам заказ с максимальной скидкой</span>
+          <form class="form offer__form" method="get">
+            <div class="form-row">
+              <div class="form-group">
+                <input class="form__input" type="text" placeholder="Ваше имя">
+              </div>
+              <div class="form-group">
+                <input class="form__input" type="tel" placeholder="Ваш телефон">
+              </div>
+              <div class="form-group">
+                <input class="form__input" type="text" placeholder="Ваша цена">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group form-group--small">
+                <button class="btn form__submit" type="sumbit">
+                  <span class="btn__text">Получить скидку</span>
+                </button>
+              </div>
+              <div class="form-group form-group--big">
+                <p class="form__text">Ваши данные надежно защищены. Отправление заявки ни к чему не обязывает.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- ./offer-card -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.offer -->
+
+    <section class="section about">
+      <div class="container">
+        <h2 class="section__header">О производстве</h2>
+        <img class="about__img" src="img/about.jpg" alt="Мужчина режет плитку">
+        <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="about__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section about -->
   </main>
 
   <!-- Include JS -->

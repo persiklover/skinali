@@ -2,6 +2,15 @@
   margin-bottom: 13rem
   +sm
     margin-bottom: 7rem
+  &--secondary
+    position: relative
+    z-index: 2
+    margin-bottom: -25rem
+    .offer-card
+      background-image: url(../img/offer-bg2.jpg)
+      margin-top: -20rem
+      +md
+        background: white
   &-card
     margin-top: -10rem
     background: white url('../img/offer-bg.jpg') no-repeat right top / contain
@@ -29,6 +38,11 @@
     letter-spacing: 0.075rem
     margin: 0
     margin-bottom: 3.1rem
+  &__subtitle
+    display: block
+    width: 70rem
+    +md
+      width: 100%
   &__form
     margin-top: 3.8rem
 
@@ -49,6 +63,10 @@
     &:last-child
       .form__input
         border-right: 0.1rem solid #ddd
+    &--small
+      flex-basis: 33%
+    &--big
+      flex-basis: 66%
     // < 768px
     +sm
       flex: auto
@@ -66,6 +84,9 @@
     background-color: #fff
     padding: 3rem 2.6rem
     font-size: 1.5rem
+    &:focus
+      outline: 0
+      border-color: $button-background-color
     // < 768px
     +sm
       text-align: center
@@ -102,7 +123,7 @@
     &:checked + label::before
       background: url("../img/checkbox.svg") no-repeat 60% 25% / 75%
     &:focus + label::before
-      // outline: none
+      outline: none
       border-color: $button-background-color
 
   &__submit
@@ -113,3 +134,15 @@
     // < 992px
     +md
       font-size: 1.4rem
+  &__text
+    width: 39rem
+    color: #596164
+    font-size: 1.7rem
+    margin-left: 4rem
+    +lg
+      width: 35rem
+    +md
+      width: 100%
+    +sm
+      text-align: center
+      margin: 1rem 0 0
