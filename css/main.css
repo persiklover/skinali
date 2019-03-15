@@ -2488,7 +2488,7 @@ body {
 
 @media (max-width: 992px) {
   .footer-section {
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
   }
   .footer-section:last-child {
     margin-bottom: 0;
@@ -2497,6 +2497,7 @@ body {
 
 .footer-section__title {
   margin: 0.2rem 0;
+  line-height: 1.2;
   font-size: 1.8rem;
   font-family: 'Proxima Nova', sans-serif;
   font-weight: bold;
@@ -2540,14 +2541,14 @@ body {
 
 @media (max-width: 576px) {
   .payments__item {
-    margin: .5rem 0;
+    margin: 0;
   }
 }
 
 .socials {
   list-style: none;
   padding: 0;
-  margin: 1rem 0 0;
+  margin: 1.5rem 0 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
