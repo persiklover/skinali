@@ -684,6 +684,10 @@ a {
   height: 1px;
 }
 
+.hidden {
+  display: none;
+}
+
 .container {
   max-width: 1180px;
   padding: 0 10px;
