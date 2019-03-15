@@ -2095,6 +2095,7 @@ body {
 .compare-slider {
   position: relative;
   padding: 0 4.5rem;
+  margin-bottom: 6rem;
 }
 
 @media (max-width: 992px) {

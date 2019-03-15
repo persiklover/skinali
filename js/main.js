@@ -66,6 +66,7 @@ $('.compare-slider').slick({
   slidesToScroll: 1,
   draggable: false,
   dots: true,
+  swipe: false,
 });
 
 });
