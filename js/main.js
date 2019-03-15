@@ -2,6 +2,15 @@ var handle = ally.style.focusWithin();
 
 $(function() {
 
+$('a[href^="#"]').click(function(e) {
+  e.preventDefault();
+  $('html, body').animate({
+    scrollTop: $($(this).attr('href')).offset().top - 80 + 'px'
+  }, 500);
+});
+
+$('[type="tel"]').mask('+7 (999) 999-99-99');
+
 $('.js-menu-btn').click(function() {
   $(this).toggleClass('active');
   $('.nav').toggleClass('nav--active');
@@ -25,10 +34,6 @@ $('.feedback-wrap').slick({
   }]
 });
 
-function createIframe(id) {
-  // body...
-}
-
 $('#map a').click(function(e) {
   e.preventDefault();
 
@@ -48,6 +53,19 @@ document.addEventListener('click', function(e) {
   else {
     map.style.pointerEvents = 'none';
   }
-})
+});
+
+// twentytwenty
+$('.compare-slider__slide').twentytwenty({
+  before_label: 'Без скинали',
+  after_label: 'Со скинали'
+});
+
+$('.compare-slider').slick({
+  infinite: true,
+  slidesToScroll: 1,
+  draggable: false,
+  dots: true,
+});
 
 });

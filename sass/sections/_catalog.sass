@@ -13,6 +13,9 @@
     height: 13rem
     margin-bottom: 3rem
     overflow: hidden
+    &:hover
+      .catalog-card__buttons-block
+        transform: translateY(0)
     // < 992px
     +md
       flex-basis: 100%
@@ -39,7 +42,11 @@
       position: absolute
       right:  0
       bottom: 0
+      transform: translateY(100%)
       display: flex
+      transition: .3s ease
+      +md
+        transform: translateY(0)
       // < 576px
       +xs
         font-size: 1.4rem
