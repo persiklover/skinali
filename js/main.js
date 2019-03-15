@@ -29,15 +29,15 @@ function createIframe(id) {
   // body...
 }
 
-$('#map').click(function(e) {
+$('#map a').click(function(e) {
   e.preventDefault();
-  var iframe = document.createElement('iframe');
 
+  var iframe = document.createElement('iframe');
   iframe.setAttribute('allowfullscreen', '');
   iframe.setAttribute('src', 'https://yandex.ru/map-widget/v1/-/CCeqiENO');
 
-  $(this).removeAttr('href');
-  $(this).append(iframe);
+  $(this).parent().append(iframe);
+  $(this).remove();
 });
 
 document.addEventListener('click', function(e) {

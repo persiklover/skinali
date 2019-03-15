@@ -17,12 +17,23 @@
       margin: 0 auto 2.5rem
 
 .map
-  display: block
+  position: relative
+  background-color: white
   margin-top: 4.5rem
-  background: url('../img/map.jpg') center / cover
+  display: block
   height: 40rem
   overflow: hidden
+  &__text
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    +bold
+  &__preview,
   iframe
-    width: 100%
-    height: 40rem
+    position: relative
+    z-index: 2
+  iframe
+    width:  100%
+    height: 100%
     border: none

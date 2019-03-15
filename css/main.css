@@ -2202,15 +2202,33 @@ body {
 }
 
 .map {
-  display: block;
+  position: relative;
+  background-color: white;
   margin-top: 4.5rem;
-  background: url("../img/map.jpg") center/cover;
+  display: block;
   height: 40rem;
   overflow: hidden;
 }
 
+.map__text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: bold;
+}
+
+.map__preview,
+.map iframe {
+  position: relative;
+  z-index: 2;
+}
+
 .map iframe {
   width: 100%;
-  height: 40rem;
+  height: 100%;
   border: none;
 }
