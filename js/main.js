@@ -2,6 +2,8 @@ var handle = ally.style.focusWithin();
 
 $(function() {
 
+new WOW().init();
+
 $('a[href^="#"]').click(function(e) {
   e.preventDefault();
   $('html, body').animate({
