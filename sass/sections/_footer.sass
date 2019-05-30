@@ -3,25 +3,38 @@
   background-color: darken(#262626, 10)
   color: white
   overflow: hidden
-  &-wrap
+  
+  &__wrap
     display: flex
     justify-content: space-between
+    
     +md
       flex-direction: column
       align-items: center
+
+  &__socials
+    margin-top: 1.5rem
+
   &-section
+    flex: 1
     display: flex
     flex-direction: column
-    font-size: 1.4rem
     +light
+    font-size: 1.4rem
+    
     &:last-child
       align-items: flex-end
+      
       +md
         align-items: center
+    
     +md
+      flex: auto
       margin-bottom: 3rem
+      
       &:last-child
         margin-bottom: 0
+    
     &__title
       margin: 0.2rem 0
       line-height: 1.2
@@ -35,27 +48,38 @@
   padding: 0
   margin: 0
   display: flex
+  justify-content: center
   align-items: center
+  
   +xs
     flex-direction: column
+  
   &__item
+    display: inline-flex
     margin-right: 2rem
-    width:  6rem
-    height: 6rem
+    
     &:last-child
       margin-right: 0
+    
     +xs
       margin: 0
+    
+    img
+      width:  6rem
+      height: 6rem
 
 .socials
   list-style: none
   padding: 0
-  margin: 1.5rem 0 0
   display: flex
-  &__link
+
+  &__item
     margin-right: 2.5rem
+    font-size: 0
+    
     &:last-child
       margin-right: 0
+    
     img
       width:  2.5rem
       height: 2.5rem

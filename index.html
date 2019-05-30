@@ -99,16 +99,22 @@
           <form class="form offer__form" method="get">
             <div class="form-row">
               <div class="form-group">
-                <label class="form__label" for="input1">Вид стекла</label>
-                <input class="form__input" id="input1" type="text">
+                <label class="form__label" for="select1">Вид стекла</label>
+                <button class="form__select" id="select1">
+                  <span>С печатью</span>
+                  <ul class="form__select-list">
+                    <li class="form__select-item">С печатью</li>
+                    <li class="form__select-item">Без печати</li>
+                  </ul>
+                </button>
               </div>
               <div class="form-group">
                 <label class="form__label" for="input2">Ширина, см</label>
-                <input class="form__input" id="input2" type="text">
+                <input class="form__input" id="input2" type="number">
               </div>
               <div class="form-group">
                 <label class="form__label" for="input3">Высота, см</label>
-                <input class="form__input" id="input3" type="text">
+                <input class="form__input" id="input3" type="number">
               </div>
             </div>
             <div class="form-row">
@@ -183,7 +189,7 @@
             <div class="feature__img-wrap">
               <img class="feature__img" src="img/features/6.svg" alt="">
             </div>
-            <span class="feature__name"> Минимальная цена в городе<br>от 1600 р метр</span>
+            <span class="feature__name"> Минимальная цена в городе<br>от 1600р/м</span>
           </div>
         </div>
       </div>
@@ -199,25 +205,19 @@
 
           <div class="catalog-card">
             <svg class="catalog-card__img" focusable="false"
-                 viewBox="0 0 570 130" preserveAspectRatio="xMidYMid slice"
+                 viewBox="0 0 570 130" width="570" height="130" preserveAspectRatio="xMidYMid slice"
                  role="img" aria-label="<alt>">
-            	<image xlink:href="img/catalog/1.jpg?svg" width="100%" height="100%"></image>
+              <image xlink:href="img/catalog/1.jpg?svg" width="100%" height="100%"/>
             </svg>
-            <h3 class="catalog-card__tag">Коллажи</h3>
-            <div class="catalog-card__buttons-block">
+            <span class="catalog-card__tag">Коллажи</span>
+            <footer class="catalog-card__buttons-block">
               <button class="btn btn--o catalog-card__btn">
                 <span class="btn__text">Примерить онлайн</span>
               </button>
               <a class="btn catalog-card__btn" href="#offer">
                 <span class="btn__text">Заказать</span>
               </a>
-              <button class="catalog-card__btn btn-like js-like-btn"
-                      aria-label="Мне нравится">
-                <svg focusable="false" viewBox="0 0 23.2 23.2">
-                  <use xlink:href="#like-icon"></use>
-                </svg>
-              </button>
-            </div>
+            </footer>
           </div>
 
           <div class="catalog-card">
@@ -227,20 +227,14 @@
             	<image xlink:href="img/catalog/2.jpg?svg" width="100%" height="100%"></image>
             </svg>
             <h3 class="catalog-card__tag">Авторская коллекция</h3>
-            <div class="catalog-card__buttons-block">
+            <footer class="catalog-card__buttons-block">
               <button class="btn btn--o catalog-card__btn">
                 <span class="btn__text">Примерить онлайн</span>
               </button>
               <a class="btn catalog-card__btn" href="#offer">
                 <span class="btn__text">Заказать</span>
               </a>
-              <button class="catalog-card__btn btn-like js-like-btn"
-                      aria-label="Мне нравится">
-                <svg focusable="false" viewBox="0 0 23.2 23.2">
-                  <use xlink:href="#like-icon"></use>
-                </svg>
-              </button>
-            </div>
+            </footer>
           </div>
 
           <div class="catalog-card">
@@ -250,20 +244,14 @@
             	<image xlink:href="img/catalog/3.jpg?svg" width="100%" height="100%"></image>
             </svg>
             <h3 class="catalog-card__tag">Коллажи</h3>
-            <div class="catalog-card__buttons-block">
+            <footer class="catalog-card__buttons-block">
               <button class="btn btn--o catalog-card__btn">
                 <span class="btn__text">Примерить онлайн</span>
               </button>
               <a class="btn catalog-card__btn" href="#offer">
                 <span class="btn__text">Заказать</span>
               </a>
-              <button class="catalog-card__btn btn-like js-like-btn"
-                      aria-label="Мне нравится">
-                <svg focusable="false" viewBox="0 0 23.2 23.2">
-                  <use xlink:href="#like-icon"></use>
-                </svg>
-              </button>
-            </div>
+            </footer>
           </div>
 
           <div class="catalog-card">
@@ -273,20 +261,14 @@
             	<image xlink:href="img/catalog/4.jpg?svg" width="100%" height="100%"></image>
             </svg>
             <h3 class="catalog-card__tag">Авторская коллекция</h3>
-            <div class="catalog-card__buttons-block">
+            <footer class="catalog-card__buttons-block">
               <button class="btn btn--o catalog-card__btn">
                 <span class="btn__text">Примерить онлайн</span>
               </button>
               <a class="btn catalog-card__btn" href="#offer">
                 <span class="btn__text">Заказать</span>
               </a>
-              <button class="catalog-card__btn btn-like js-like-btn"
-                      aria-label="Мне нравится">
-                <svg focusable="false" viewBox="0 0 23.2 23.2">
-                  <use xlink:href="#like-icon"></use>
-                </svg>
-              </button>
-            </div>
+            </footer>
           </div>
 
           <div class="catalog-card">
@@ -296,20 +278,14 @@
             	<image xlink:href="img/catalog/5.jpg?svg" width="100%" height="100%"></image>
             </svg>
             <h3 class="catalog-card__tag">Коллажи</h3>
-            <div class="catalog-card__buttons-block">
+            <footer class="catalog-card__buttons-block">
               <button class="btn btn--o catalog-card__btn">
                 <span class="btn__text">Примерить онлайн</span>
               </button>
               <a class="btn catalog-card__btn" href="#offer">
                 <span class="btn__text">Заказать</span>
               </a>
-              <button class="catalog-card__btn btn-like js-like-btn"
-                      aria-label="Мне нравится">
-                <svg focusable="false" viewBox="0 0 23.2 23.2">
-                  <use xlink:href="#like-icon"></use>
-                </svg>
-              </button>
-            </div>
+            </footer>
           </div>
 
           <div class="catalog-card">
@@ -319,20 +295,14 @@
             	<image xlink:href="img/catalog/6.jpg?svg" width="100%" height="100%"></image>
             </svg>
             <h3 class="catalog-card__tag">Абстракция</h3>
-            <div class="catalog-card__buttons-block">
+            <footer class="catalog-card__buttons-block">
               <button class="btn btn--o catalog-card__btn">
                 <span class="btn__text">Примерить онлайн</span>
               </button>
               <a class="btn catalog-card__btn" href="#offer">
                 <span class="btn__text">Заказать</span>
               </a>
-              <button class="catalog-card__btn btn-like js-like-btn"
-                      aria-label="Мне нравится">
-                <svg focusable="false" viewBox="0 0 23.2 23.2">
-                  <use xlink:href="#like-icon"></use>
-                </svg>
-              </button>
-            </div>
+            </footer>
           </div>
 
           <div class="catalog-card">
@@ -342,20 +312,14 @@
             	<image xlink:href="img/catalog/7.jpg?svg" width="100%" height="100%"></image>
             </svg>
             <h3 class="catalog-card__tag">Коллажи</h3>
-            <div class="catalog-card__buttons-block">
+            <footer class="catalog-card__buttons-block">
               <button class="btn btn--o catalog-card__btn">
                 <span class="btn__text">Примерить онлайн</span>
               </button>
               <a class="btn catalog-card__btn" href="#offer">
                 <span class="btn__text">Заказать</span>
               </a>
-              <button class="catalog-card__btn btn-like js-like-btn"
-                      aria-label="Мне нравится">
-                <svg focusable="false" viewBox="0 0 23.2 23.2">
-                  <use xlink:href="#like-icon"></use>
-                </svg>
-              </button>
-            </div>
+            </footer>
           </div>
 
           <div class="catalog-card">
@@ -365,23 +329,18 @@
             	<image xlink:href="img/catalog/8.jpg?svg" width="100%" height="100%"></image>
             </svg>
             <h3 class="catalog-card__tag">Абстракция</h3>
-            <div class="catalog-card__buttons-block">
+            <footer class="catalog-card__buttons-block">
               <button class="btn btn--o catalog-card__btn">
                 <span class="btn__text">Примерить онлайн</span>
               </button>
               <a class="btn catalog-card__btn" href="#offer">
                 <span class="btn__text">Заказать</span>
               </a>
-              <button class="catalog-card__btn btn-like js-like-btn"
-                      aria-label="Мне нравится">
-                <svg focusable="false" viewBox="0 0 23.2 23.2">
-                  <use xlink:href="#like-icon"></use>
-                </svg>
-              </button>
-            </div>
+            </footer>
           </div>
 
         </div>
+
         <a class="btn catalog__btn" href="#">Смотреть весь каталог скинали</a>
         <span class="catalog__subtext">Более 3000 изображений скинали в 25 рубриках</span>
       </div>
@@ -391,39 +350,39 @@
 
     <section class="section blog">
       <div class="container">
-        <div class="blog-header">
+        <header class="blog-header">
           <h2 class="blog-header__title">Полезное или что важно знать о скинали...</h2>
           <a class="blog-header__link" href="#">Читать все статьи</a>
-        </div>
-        <div class="blog-wrap">
+        </header>
+        <div class="blog__wrap">
 
-          <div class="blog-card">
-            <a class="blog-card__img-wrap" href="#">
-              <img class="blog-card__img" src="img/blog/1.jpg" alt="">
-            </a>
-            <span class="blog-card__title">Виды стекла</span>
-          </div>
+          <a class="blog-card" href="#">
+            <figure>
+              <img class="blog-card__img" src="img/blog/1.jpg" alt="Виды стекла">
+              <figcaption class="blog-card__title">Виды стекла</figcaption>
+            </figure>
+          </a>
 
-          <div class="blog-card">
-            <a class="blog-card__img-wrap" href="#">
-              <img class="blog-card__img" src="img/blog/2.jpg" alt="">
-            </a>
-            <span class="blog-card__title">Виды печати</span>
-          </div>
+          <a class="blog-card" href="#">
+            <figure>
+              <img class="blog-card__img" src="img/blog/2.jpg" alt="Виды печати">
+              <figcaption class="blog-card__title">Виды печати</figcaption>
+            </figure>
+          </a>
 
-          <div class="blog-card">
-            <a class="blog-card__img-wrap" href="#">
-              <img class="blog-card__img" src="img/blog/3.jpg" alt="">
-            </a>
-            <span class="blog-card__title">Виды крепежа и монтажа</span>
-          </div>
+          <a class="blog-card" href="#">
+            <figure>
+              <img class="blog-card__img" src="img/blog/3.jpg" alt="Виды крепежа и монтажа">
+              <figcaption class="blog-card__title">Виды крепежа и монтажа</figcaption>
+            </figure>
+          </a>
 
-          <div class="blog-card">
-            <a class="blog-card__img-wrap" href="#">
-              <img class="blog-card__img" src="img/blog/4.jpg" alt="">
-            </a>
-            <span class="blog-card__title">Вопросы - Ответы</span>
-          </div>
+          <a class="blog-card" href="#">
+            <figure>
+              <img class="blog-card__img" src="img/blog/4.jpg" alt="Вопросы - Ответы">
+              <figcaption class="blog-card__title">Вопросы - Ответы</figcaption>
+            </figure>
+          </a>
 
         </div>
       </div>
@@ -436,109 +395,109 @@
         <h2 class="section__header">Цены и виды скинали</h2>
         <div class="prices-wrap">
 
-          <div class="price-block">
+          <figure class="price-block">
             <img class="price-block__img" src="img/prices/1.jpg" alt="">
-            <div class="price-block__info">
+            <figcaption class="price-block__info">
               <span class="price-block__type">Прозрачные</span>
-              <strong class="price-block__price">от 3500р/м<sup>2</sup></strong>
-            </div>
-            <div class="price-block__footer">
+              <strong class="price-block__price">3500р/м<sup>2</sup></strong>
+            </figcaption>
+            <footer class="price-block__footer">
               <a class="btn price-block__btn" href="#offer">
                 <span class="btn__text">Оставить заявку</span>
               </a>
-            </div>
-          </div>
+            </footer>
+          </figure>
 
-          <div class="price-block">
+          <figure class="price-block">
             <img class="price-block__img" src="img/prices/2.jpg" alt="">
-            <div class="price-block__info">
+            <figcaption class="price-block__info">
               <span class="price-block__type">Однотонные</span>
-              <strong class="price-block__price">от 3500р/м<sup>2</sup></strong>
-            </div>
-            <div class="price-block__footer">
+              <strong class="price-block__price">3500р/м<sup>2</sup></strong>
+            </figcaption>
+            <footer class="price-block__footer">
               <a class="btn price-block__btn" href="#offer">
                 <span class="btn__text">Оставить заявку</span>
               </a>
-            </div>
-          </div>
+            </footer>
+          </figure>
 
-          <div class="price-block">
+          <figure class="price-block">
             <img class="price-block__img" src="img/prices/3.jpg" alt="">
-            <div class="price-block__info">
+            <figcaption class="price-block__info">
               <span class="price-block__type">Полноцветные</span>
-              <strong class="price-block__price">от 3500р/м<sup>2</sup></strong>
-            </div>
-            <div class="price-block__footer">
+              <strong class="price-block__price">3500р/м<sup>2</sup></strong>
+            </figcaption>
+            <footer class="price-block__footer">
               <a class="btn price-block__btn" href="#offer">
                 <span class="btn__text">Оставить заявку</span>
               </a>
-            </div>
-          </div>
-
-          <div class="price-block">
+            </footer>
+          </figure>
+          
+          <figure class="price-block">
             <img class="price-block__img" src="img/prices/4.jpg" alt="">
-            <div class="price-block__info">
+            <figcaption class="price-block__info">
               <span class="price-block__type">Стекло ‘Optiwite’</span>
-              <strong class="price-block__price">от 3500р/м<sup>2</sup></strong>
-            </div>
-            <div class="price-block__footer">
+              <strong class="price-block__price">3500р/м<sup>2</sup></strong>
+            </figcaption>
+            <footer class="price-block__footer">
               <a class="btn price-block__btn" href="#offer">
                 <span class="btn__text">Оставить заявку</span>
               </a>
-            </div>
-          </div>
-
-          <div class="price-block">
+            </footer>
+          </figure>
+          
+          <figure class="price-block">
             <img class="price-block__img" src="img/prices/5.jpg" alt="">
-            <div class="price-block__info">
+            <figcaption class="price-block__info">
               <span class="price-block__type">Зеркальные</span>
-              <strong class="price-block__price">от 3500р/м<sup>2</sup></strong>
-            </div>
-            <div class="price-block__footer">
+              <strong class="price-block__price">3500р/м<sup>2</sup></strong>
+            </figcaption>
+            <footer class="price-block__footer">
               <a class="btn price-block__btn" href="#offer">
                 <span class="btn__text">Оставить заявку</span>
               </a>
-            </div>
-          </div>
-
-          <div class="price-block">
+            </footer>
+          </figure>
+          
+          <figure class="price-block">
             <img class="price-block__img" src="img/prices/6.jpg" alt="">
-            <div class="price-block__info">
+            <figcaption class="price-block__info">
               <span class="price-block__type">С подвеской</span>
-              <strong class="price-block__price">от 3500р/м<sup>2</sup></strong>
-            </div>
-            <div class="price-block__footer">
+              <strong class="price-block__price">3500р/м<sup>2</sup></strong>
+            </figcaption>
+            <footer class="price-block__footer">
               <a class="btn price-block__btn" href="#offer">
                 <span class="btn__text">Оставить заявку</span>
               </a>
-            </div>
-          </div>
-
-          <div class="price-block">
+            </footer>
+          </figure>
+          
+          <figure class="price-block">
             <img class="price-block__img" src="img/prices/7.jpg" alt="">
-            <div class="price-block__info">
+            <figcaption class="price-block__info">
               <span class="price-block__type">Световые панели</span>
-              <strong class="price-block__price">от 3500р/м<sup>2</sup></strong>
-            </div>
-            <div class="price-block__footer">
+              <strong class="price-block__price">3500р/м<sup>2</sup></strong>
+            </figcaption>
+            <footer class="price-block__footer">
               <a class="btn price-block__btn" href="#offer">
                 <span class="btn__text">Оставить заявку</span>
               </a>
-            </div>
-          </div>
-
-          <div class="price-block">
+            </footer>
+          </figure>
+          
+          <figure class="price-block">
             <img class="price-block__img" src="img/prices/8.jpg" alt="">
-            <div class="price-block__info">
+            <figcaption class="price-block__info">
               <span class="price-block__type">Панно, картины</span>
-              <strong class="price-block__price">от 3500р/м<sup>2</sup></strong>
-            </div>
-            <div class="price-block__footer">
+              <strong class="price-block__price">3500р/м<sup>2</sup></strong>
+            </figcaption>
+            <footer class="price-block__footer">
               <a class="btn price-block__btn" href="#offer">
                 <span class="btn__text">Оставить заявку</span>
               </a>
-            </div>
-          </div>
+            </footer>
+          </figure>
 
         </div>
       </div>
@@ -560,7 +519,7 @@
           <div class="step">
             <img class="step__img" src="img/steps/2.svg" alt="">
             <h4 class="step__name">Замер</h4>
-            <p class="step__description">Вы производите замер сами или наш специалист выезжает к вам</p>
+            <p class="step__description">Наш специалист выезжает к вам и производит замер</p>
           </div>
 
           <div class="step">
@@ -572,19 +531,19 @@
           <div class="step">
             <img class="step__img" src="img/steps/4.svg" alt="">
             <h4 class="step__name">Договор</h4>
-            <p class="step__description">Мы заключаем с Вами договор</p>
+            <p class="step__description">Заключаем с Вами договор</p>
           </div>
 
           <div class="step">
             <img class="step__img" src="img/steps/5.svg" alt="">
             <h4 class="step__name">Производство</h4>
-            <p class="step__description">Мы изготавливаем скинали в точном соответствии с макетом</p>
+            <p class="step__description">Изготавливаем скинали в точном соответствии с макетом</p>
           </div>
 
           <div class="step">
             <img class="step__img" src="img/steps/6.svg" alt="">
             <h4 class="step__name">Монтаж</h4>
-            <p class="step__description">Мы устанавливаем  скинали на вашей кухне</p>
+            <p class="step__description">Устанавливаем скинали на вашей кухне</p>
           </div>
 
         </div>
@@ -622,27 +581,33 @@
     <section class="section feedback">
       <div class="container">
         <h2 class="section__header">Отзывы наших клиентов</h2>
-        <div class="feedback-wrap">
+        <div class="feedback-wrap owl-carousel">
 
           <div class="feedback-item">
-            <p class="feedback-item__text">Удобно, что замерщик привозит с собой образцы. В офис ехать не потребовалось. Изготовили фартук и установили уже через 9 дней после замера. Считаю, что довольно быстро и главное качественно. Думаю, он прослужит дольше фанерного, к тому же обещали 10 лет гарантии.</p>
+            <p class="feedback-item__text">
+              Удобно, что замерщик привозит с собой образцы. В офис ехать не потребовалось. Изготовили фартук и установили уже через 9 дней после замера. Считаю, что довольно быстро и главное качественно. Думаю, он прослужит дольше фанерного, к тому же обещали 10 лет гарантии.
+            </p>
             <img class="feedback-item__avatar" src="img/feedback/1.jpg" alt="">
-            <span class="feedback-item__name">Виктория Топоркова</span>
-            <span class="feedback-item__city">Москва</span>
+            <cite class="feedback-item__name">Виктория Топоркова</cite>
+            <address class="feedback-item__city">Москва</address>
           </div>
 
           <div class="feedback-item">
-            <p class="feedback-item__text">Приятно теперь заходить на кухню и пить чай, разглядывая фартук. Орхидеи на камнях. Выбрал этот вариант, так как люблю безмятежность природы. А цветы на кухонном фартуке напоминают о лете, поднимают настроение. Изготовили и установили качественно, со сроками не подвели. Спасибо!</p>
+            <p class="feedback-item__text">
+              Приятно теперь заходить на кухню и пить чай, разглядывая фартук. Орхидеи на камнях. Выбрал этот вариант, так как люблю безмятежность природы. А цветы на кухонном фартуке напоминают о лете, поднимают настроение. Изготовили и установили качественно, со сроками не подвели. Спасибо!
+            </p>
             <img class="feedback-item__avatar" src="img/feedback/2.jpg" alt="">
-            <span class="feedback-item__name">Никита Османов</span>
-            <span class="feedback-item__city">Набережные Челны</span>
+            <cite class="feedback-item__name">Никита Османов</cite>
+            <address class="feedback-item__city">Набережные Челны</address>
           </div>
 
           <div class="feedback-item">
-            <p class="feedback-item__text">Менеджеры подсказали все нюансы со стеклом и печатью. Долго выбирал картинку, помогло наложение макета на фото кухни. Cмотрится необычно, даже как будто увеличивает пространство в комнате. Ответственная компания, все сделали быстро и красиво.</p>
+            <p class="feedback-item__text">
+              Менеджеры подсказали все нюансы со стеклом и печатью. Долго выбирал картинку, помогло наложение макета на фото кухни. Cмотрится необычно, даже как будто увеличивает пространство в комнате. Ответственная компания, все сделали быстро и красиво.
+            </p>
             <img class="feedback-item__avatar" src="img/feedback/3.jpg" alt="">
-            <span class="feedback-item__name">Михаил Урядов</span>
-            <span class="feedback-item__city">Саратов</span>
+            <cite class="feedback-item__name">Михаил Урядов</cite>
+            <address class="feedback-item__city">Саратов</address>
           </div>
           
         </div>
@@ -665,7 +630,7 @@
                 <input class="form__input" type="tel" placeholder="Ваш телефон">
               </div>
               <div class="form-group">
-                <input class="form__input" type="text" placeholder="Ваша цена">
+                <input class="form__input" type="number" placeholder="Ваша цена">
               </div>
             </div>
             <div class="form-row">
@@ -704,41 +669,43 @@
 
           <section class="contacts-item wow fadeInDown">
             <h4 class="visually-hidden">Телефон</h4>
-            <img class="contacts-item__icon" src="img/phone.svg" alt=""
+            <img class="contacts-item__icon"
+                 src="img/phone.svg" alt=""
                  aria-hidden="true">
-            <a class="contacts-item__link" href="tel:+74991234567"
-               aria-label="Позвонить">+7 499 123-45-67</a>
+            <a class="contacts-item__content" href="tel:+74991234567">+7 499 123-45-67</a>
           </section>
 
           <section class="contacts-item wow fadeInDown">
             <h4 class="visually-hidden">Адрес</h4>
-            <img class="contacts-item__icon" src="img/location.svg" alt=""
+            <img class="contacts-item__icon"
+                 src="img/location.svg" alt=""
                  aria-hidden="true">
-            <address class="contacts-item__link">Каширинское шоссе, д. 23, офис 345</address>
+            <address class="contacts-item__content">Каширинское шоссе, д. 23, офис 345</address>
           </section>
 
           <section class="contacts-item wow fadeInDown">
             <h4 class="visually-hidden">Email</h4>
-            <img class="contacts-item__icon" src="img/email.svg" alt=""
+            <img class="contacts-item__icon"
+                 src="img/email.svg" alt=""
                  aria-hidden="true">
-            <a class="contacts-item__link" href="mailto:skinali@mail.ru"
-               aria-label="Написать на почту">skinali@mail.ru</a>
+            <a class="contacts-item__content" href="mailto:skinali@mail.ru">skinali@mail.ru</a>
           </section>
           
         </div>
+        <!-- /.contacts-wrap -->
       </div>
       <!-- /.container -->
 
       <div class="map" id="map">
         <a href="https://yandex.ru/map-widget/v1/-/CCeqiENO" target="_blank">
           <svg class="map__preview"
-               viewBox="0 0 1566 399" height="400"
+               viewBox="0 0 1566 399" width="1566" height="399"
                preserveAspectRatio="xMidYMid slice"
                role="img" aria-label="Интерактивная карта">
-            <image xlink:href="img/map.jpg?svg" width="100%" height="100%"></image>
+            <image xlink:href="img/map.jpg?svg" width="100%" height="100%"/>
           </svg>
         </a>
-        <span class="map__text" aria-hidden="true">Карта загружается...</span>
+        <span class="map__hint" aria-hidden="true">Карта загружается...</span>
       </div>
 
     </section>
@@ -747,7 +714,7 @@
 
   <footer class="footer">
     <div class="container">
-      <div class="footer-wrap">
+      <div class="footer__wrap">
         <section class="footer-section">
           <h4 class="visually-hidden">Логотип</h4>
           <p class="footer-section__title">Фабрика скинали №1</p>
@@ -774,22 +741,20 @@
 
         <section class="footer-section">
           <h4 class="visually-hidden">Контакты</h4>
-          <a class="footer-section__title" href="tel:+74991234567"
-             aria-label="Позвонить">+7 499 123-45-67</a>
-          <a href="mailto:skinali@mail.ru"
-             aria-label="Написать на почту">skinali@mail.ru</a>
-          <ul class="socials">
-            <li class="socials__link">
+          <a class="footer-section__title" href="tel:+74991234567">+7 499 123-45-67</a>
+          <a href="mailto:skinali@mail.ru">skinali@mail.ru</a>
+          <ul class="socials footer__socials">
+            <li class="socials__item">
               <a href="#" aria-label="Мы ВКонтакте">
                 <img src="img/socials/vk.svg" alt="ВКонтакте">
               </a>
             </li>
-            <li class="socials__link">
+            <li class="socials__item">
               <a href="#" aria-label="Мы в твиттере">
                 <img src="img/socials/twitter.svg" alt="Twitter">
               </a>
             </li>
-            <li class="socials__link">
+            <li class="socials__item">
               <a href="#" aria-label="Мы в инстаграме">
                 <img src="img/socials/instagram.svg" alt="Instagram">
               </a>
@@ -802,18 +767,12 @@
   </footer>
   <!-- /.footer -->
 
-  <svg class="hidden" focusable="false" viewBox="0 0 23.2 23.2">
-    <symbol id="like-icon">
-      <path transform="translate(1,1) scale(0.9)" d="M11.6 22C-11 9.6 5.3-5.7 11.6 4.6c6.3-10.3 22.7 5 0 17.4z"/>
-    </symbol>
-  </svg>
-
   <!-- Include JS -->
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery.maskedinput.min.js"></script>
   <script src="lib/twentytwenty/js/jquery.twentytwenty.js"></script>
   <script src="lib/twentytwenty/js/jquery.event.move.js"></script>
-  <script src="lib/slick/slick.min.js"></script>
+  <script src="lib/owlcarousel/js/owl.carousel.min.js"></script>
   <script src="lib/wowjs/wow.min.js"></script>
   <script src="js/ally.min.js"></script>
   <script src="js/main.js"></script>

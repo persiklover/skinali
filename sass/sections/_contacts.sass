@@ -1,5 +1,9 @@
 .contacts
   padding-bottom: 0
+
+  +sm
+    padding-bottom: 0
+
   &-wrap
     display: flex
     +sm
@@ -7,28 +11,35 @@
   &-item
     flex-basis: (100% / 3)
     text-align: center
+    
     +sm
       flex: auto
       margin-bottom: 3.5rem
       &:last-child
         margin-bottom: 0
+    
     &__icon
       height: 3rem
-      display: block
+      display: flex
       margin: 0 auto 2.5rem
+    
+    &__content
+      font-style: normal
 
 .map
   position: relative
   background-color: white
-  margin-top: 4.5rem
+  margin-top: 6.5rem
   display: block
   height: 40rem
   overflow: hidden
-  &__text
+  font-size: 0
+  &__hint
     position: absolute
     left: 50%
     top: 50%
     transform: translate(-50%, -50%)
+    font-size: 1.6rem
     +bold
   &__preview,
   iframe

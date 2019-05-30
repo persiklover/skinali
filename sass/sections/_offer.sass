@@ -13,6 +13,7 @@
       margin-top: -20rem
       +md
         background: white
+        margin-top: 0
   &-card
     margin-top: -10rem
     background: white url('../img/offer-bg.jpg') no-repeat right top / contain
@@ -57,14 +58,16 @@
     // < 768px
     +sm
       flex-direction: column
-      .form__input
-        // border: 0.1rem solid #ddd
+      .form__input,
+      .form__select
+        border: 0.1rem solid #ddd
   &-group
     flex: 1
     +light
-    &:last-child
-      .form__input
-        border-right: 0.1rem solid #ddd
+    &:last-child .form__input
+      border-right-color: #ddd
+    &.ally-focus-within + & .form__input
+      border-left-color: transparent
     &--small
       flex-basis: 33%
     &--big
@@ -79,16 +82,72 @@
     font-size: 1.7rem
     display: block
     margin: 0 0 1rem
+  &__select
+    position: relative
+    width: 100%
+    border: 0.1rem solid #ddd
+    border-right-color: transparent
+    background-color: #fff
+    padding: 3rem 2.6rem
+    font-size: 1.5rem
+    text-align: left
+    cursor: pointer
+    &:focus
+      outline: 0
+      border: 0.1rem solid $button-background-color !important
+      position: relative
+      z-index: 2
+    &.active &-list
+      display: block
+    &.active
+      span::after
+        transform: rotate(45deg)
+        margin-bottom: -15px
+    span
+      display: flex
+      justify-content: space-between
+      align-items: center
+      &::after
+        content: ''
+        display: block
+        width:  1.5rem
+        height: 1.5rem
+        border-top:  .2rem solid #ddd
+        border-left: .2rem solid #ddd
+        margin-top:  -.8rem
+        margin-right: .2rem
+        transform: rotate(-135deg)
+    &-list
+      display: none
+      background-color: white
+      position: absolute
+      z-index: 2
+      left:  -.1rem
+      right: -.1rem
+      top: 100%
+      // width: 101%
+      border: 0.1rem solid #ddd
+
+      list-style: none
+      padding: 0
+      margin: 0
+    &-item
+      padding: 2rem 2.6rem
+      cursor: pointer
+      &:hover
+        background-color: #eee
   &__input
     width: 100%
     border: 0.1rem solid #ddd
-    border-right: none
+    border-right-color: transparent
     background-color: #fff
     padding: 3rem 2.6rem
     font-size: 1.5rem
     &:focus
       outline: 0
-      border-color: $button-background-color
+      border: 0.1rem solid $button-background-color !important
+      position: relative
+      z-index: 2
     // < 768px
     +sm
       text-align: center

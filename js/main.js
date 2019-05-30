@@ -18,22 +18,43 @@ $('.js-menu-btn').click(function() {
   $('.nav').toggleClass('nav--active');
 });
 
-$('.js-like-btn').click(function() {
-  $(this).toggleClass('btn-like--active');
-  $('#like-icon').css({
-    transform: 'scale(1.5)'
-  });
+$('.form__select').click(function(e) {
+  e.preventDefault();
+  $(this).toggleClass('active');
+}).blur(function() {
+  $(this).removeClass('active');
+});
+
+$('.form__select-item').click(function(e) {
+  var text = $(this).text();
+  console.log(text);
+  $(this).parents('.form__select').find('span').text(text);
 });
 
 // Feedback slider
-$('.feedback-wrap').slick({
-  infinite: true,
-  slidesToScroll: 1,
-  mobileFirst: true,
-  responsive: [{
-    breakpoint: 992,
-    settings: 'unslick'
-  }]
+$(".feedback-wrap").owlCarousel({
+  responsive: {
+    0: {
+      margin: 15,
+      stagePadding: 30,
+      loop: true,
+      items: 1,
+    },
+    768: {
+      stagePadding: 0,
+      margin: 15,
+      items: 2,
+      loop: true,
+      mouseDrag: true,
+    },
+    992: {
+      loop: false,
+      mouseDrag: false,
+      stagePadding: 0,
+      margin: 30,
+      items: 3,
+    },
+  }
 });
 
 $('#map a').click(function(e) {
@@ -63,12 +84,24 @@ $('.compare-slider__slide').twentytwenty({
   after_label: 'Со скинали'
 });
 
-$('.compare-slider').slick({
-  infinite: true,
-  slidesToScroll: 1,
-  draggable: false,
-  dots: true,
-  swipe: false,
+$('.compare-slider').owlCarousel({
+  loop: true,
+  nav: true,
+  items: 1,
+  margin: 0,
+  stagePadding: 0,
+  responsive: {
+    0: {
+      mouseDrag: false,
+      touchDrag: false
+    },
+    768: {
+      mouseDrag: false,
+    },
+    992: {
+      mouseDrag: false,
+    },
+  }
 });
 
 });

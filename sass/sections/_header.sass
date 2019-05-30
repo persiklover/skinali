@@ -44,22 +44,26 @@ $header-height--small: 6rem
       color: #6b6b6b
   &-btn
     display: flex
+    &:hover,
+    &:focus
+      background-color: darken($button-background-color, 5)
+    // < 576px
+    +md
+      font-size: 1.6rem
+      padding: 1rem
+      &:hover &__icon,
+      &:focus &__icon,
+        fill: white
+      &__icon
+        display: inline-block
+      span
+        display: none
     &__icon
       width:  2rem
       height: 2rem
       display: none
       fill: $button-background-color
       transition: .3s ease
-    // < 576px
-    +sm
-      font-size: 1.6rem
-      padding: 1rem
-      &:hover &__icon
-        fill: white
-      &__icon
-        display: inline-block
-      span
-        display: none
 
 $menu-btn-color: $button-background-color
 $menu-btn-w: 2rem
